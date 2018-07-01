@@ -26,5 +26,16 @@ public class Main {
     public static void main(String[] args){
         testarElefante();
         testarMacaco();
+
+        Zoologico zoologico = new Zoologico();
+        InstalacaoElefante instalacaoElefante = FabricaInstalacao.criarInstalacaoElefante();
+        instalacaoElefante.setLocalizacao(Localizacao.LESTE);
+        zoologico.adicionarInstalacao(instalacaoElefante);
+
+        InstalacaoMacaco instalacaoMacaco = FabricaInstalacao.criarInstalacaoMacaco();
+        instalacaoMacaco.setLocalizacao(Localizacao.CENTROESTE);
+        zoologico.adicionarInstalacao(instalacaoMacaco);
+
+        System.out.println(zoologico.getInstalacoesZoologico().get(0).getLocalizacao());
     }
 }
