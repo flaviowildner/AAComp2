@@ -11,6 +11,7 @@ public class Main {
     }
 
     private static void testarTartaruga(){
+        System.out.println("teste intellij");
 
     }
 
