@@ -1,6 +1,7 @@
 public class Main {
     private static void testarElefante(){
-        InstalacaoElefante instalacaoElefante = new InstalacaoElefante();
+        System.out.println("Testando elefante:");
+        InstalacaoElefante instalacaoElefante = FabricaInstalacao.criarInstalacaoElefante();
         AnimalGenerico elefante = new Elefante();
 
         instalacaoElefante.setAnimaisInstalados(elefante);
@@ -11,7 +12,8 @@ public class Main {
     }
 
     private static void testarMacaco(){
-        InstalacaoMacaco instalacaoMacaco = new InstalacaoMacaco();
+        System.out.println("Testando macaco:");
+        InstalacaoMacaco instalacaoMacaco = FabricaInstalacao.criarInstalacaoMacaco();
         AnimalGenerico macaco = new Macaco();
 
         instalacaoMacaco.setAnimaisInstalados(macaco);
@@ -19,10 +21,6 @@ public class Main {
         instalacaoMacaco.getAnimaisInstalados().get(0).locomover();
         instalacaoMacaco.getAnimaisInstalados().get(0).alimentar(Alimento.FRUTAS);
         instalacaoMacaco.getAnimaisInstalados().get(0).alimentar(Alimento.CARNES);
-    }
-
-    private static void testarTartaruga(){
-
     }
 
     public static void main(String[] args){

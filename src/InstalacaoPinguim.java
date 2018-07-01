@@ -1,8 +1,8 @@
 public class InstalacaoPinguim extends Instalacao {
-    public InstalacaoPinguim(){
-        this.setTemperatura(15.0);
-        this.setCapacidadeMaxima(25);
-        Tanque tanque = new Tanque(100.0);
+    public InstalacaoPinguim(double temperatura, int capacidadeMaxima, double volumeEmLitros){
+        this.setTemperatura(temperatura);
+        this.setCapacidadeMaxima(capacidadeMaxima);
+        Tanque tanque = new Tanque(volumeEmLitros);
         this.setElementosInstalados(tanque);
     }
 }
