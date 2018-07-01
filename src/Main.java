@@ -11,14 +11,14 @@ public class Main {
     }
 
     private static void testarMacaco(){
-        InstalacaoMacaco instalacaoElefante = new InstalacaoMacaco();
+        InstalacaoMacaco instalacaoMacaco = new InstalacaoMacaco();
         AnimalGenerico macaco = new Macaco();
 
-        instalacaoElefante.setAnimaisInstalados(macaco);
-        instalacaoElefante.setAnimaisInstalados(macaco);
-        instalacaoElefante.getAnimaisInstalados().get(0).locomover();
-        instalacaoElefante.getAnimaisInstalados().get(0).alimentar(Alimento.FRUTAS);
-        instalacaoElefante.getAnimaisInstalados().get(0).alimentar(Alimento.CARNES);
+        instalacaoMacaco.setAnimaisInstalados(macaco);
+        instalacaoMacaco.setAnimaisInstalados(macaco);
+        instalacaoMacaco.getAnimaisInstalados().get(0).locomover();
+        instalacaoMacaco.getAnimaisInstalados().get(0).alimentar(Alimento.FRUTAS);
+        instalacaoMacaco.getAnimaisInstalados().get(0).alimentar(Alimento.CARNES);
     }
 
     private static void testarTartaruga(){
