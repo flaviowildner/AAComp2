@@ -1,8 +1,8 @@
 public class InstalacaoTartaruga extends Instalacao {
-    public InstalacaoTartaruga(){
-        this.setTemperatura(20.0);
-        this.setCapacidadeMaxima(17);
-        Tanque tanque = new Tanque(200.0);
+    public InstalacaoTartaruga(double temperatura, int capacidadeMaxima, double volumeEmLitros){
+        this.setTemperatura(temperatura);
+        this.setCapacidadeMaxima(capacidadeMaxima);
+        Tanque tanque = new Tanque(volumeEmLitros);
         this.setElementosInstalados(tanque);
     }
 }
