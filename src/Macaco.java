@@ -6,10 +6,10 @@ public class Macaco extends AnimalTerrestre {
     public Boolean alimentar(Alimento alimento) {
         switch (alimento){
             case FRUTAS:
-                System.out.println("Estou comendo!");
+                System.out.println("Macaco: Estou comendo!");
                 return true;
             default:
-                System.out.println("Estou com fome! Me alimento apenas de frutas.");
+                System.out.println("Macaco: Estou com fome! Me alimento apenas de frutas.");
                 return false;
         }
     }
