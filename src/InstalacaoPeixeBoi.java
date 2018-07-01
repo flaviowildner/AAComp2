@@ -1,8 +1,8 @@
 public class InstalacaoPeixeBoi extends Instalacao{
-    public InstalacaoPeixeBoi(){
-        this.setTemperatura(18.0);
-        this.setCapacidadeMaxima(7);
-        Tanque tanque = new Tanque(750.0);
+    public InstalacaoPeixeBoi(double temperatura, int capacidadeMaxima, double volumeEmLitros){
+        this.setTemperatura(temperatura);
+        this.setCapacidadeMaxima(capacidadeMaxima);
+        Tanque tanque = new Tanque(volumeEmLitros);
         this.setElementosInstalados(tanque);
     }
 }

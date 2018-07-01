@@ -1,8 +1,8 @@
 public class InstalacaoFoca extends Instalacao {
-    public InstalacaoFoca(){
-        this.setTemperatura(15.0);
-        this.setCapacidadeMaxima(5);
-        Tanque tanque = new Tanque(100.0);
+    public InstalacaoFoca(double temperatura, int capacidadeMaxima, double volumeEmLitros){
+        this.setTemperatura(temperatura);
+        this.setCapacidadeMaxima(capacidadeMaxima);
+        Tanque tanque = new Tanque(volumeEmLitros);
         this.setElementosInstalados(tanque);
     }
 }

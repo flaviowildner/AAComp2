@@ -1,8 +1,8 @@
 public class InstalacaoMacaco extends Instalacao{
-    public InstalacaoMacaco(){
-        this.setTemperatura(25.0);
-        this.setCapacidadeMaxima(10);
-        Jaula jaula = new Jaula(40, 35.7, 90);
+    public InstalacaoMacaco(double temperatura, int capacidadeMaxima, double altura, double largura, double comprimento){
+        this.setTemperatura(temperatura);
+        this.setCapacidadeMaxima(capacidadeMaxima);
+        Jaula jaula = new Jaula(altura, largura, comprimento);
         this.setElementosInstalados(jaula);
     }
 }
