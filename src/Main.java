@@ -1,3 +1,13 @@
+import animais.Elefante;
+import animais.Macaco;
+import entidades.Alimento;
+import entidades.AnimalGenerico;
+import entidades.Localizacao;
+import entidades.Zoologico;
+import instalacoes.FabricaInstalacao;
+import instalacoes.InstalacaoElefante;
+import instalacoes.InstalacaoMacaco;
+
 public class Main {
     private static void testarElefante(){
         System.out.println("Testando elefante:");
